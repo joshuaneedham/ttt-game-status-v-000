@@ -16,21 +16,25 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  if board == WIN_COMBINATIONS
-    puts "Congrats!"
-  else
-    puts "Try again"
+  position_taken.each do
+    |index|.to_a
+    index
+
   end
 end
+
 def full?(board)
 
 end
+
 def draw?(draw_board)
 
 end
+
 def over?(board)
 
 end
+
 def winner(board)
 
 end
