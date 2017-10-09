@@ -16,7 +16,11 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-
+  if board == WIN_COMBINATIONS
+    puts "Congrats!"
+  else 
+    puts "Try again"
+    
 end
 def full?(board)
 
