@@ -32,14 +32,15 @@ def won?(board)
 end
 
 def full?(board)
+  #This is checking to see if there is an x or o in all the spaces on the board
     board.all? do |move|
       move == "X" || move == "O"
     end
 end
 
-def draw?(draw_board)
-  #Is board full?
-  #Is there a winning combination
+def draw?(board)
+  #If board is full and not won
+  full?(board) && !won?(board)
 end
 
 def over?(board)
