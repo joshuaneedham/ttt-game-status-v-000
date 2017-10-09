@@ -16,11 +16,10 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  position_taken.each do
-    |index|.to_a
-    index
-
+  position_taken?.each do
+    |index|
   end
+  
 end
 
 def full?(board)
