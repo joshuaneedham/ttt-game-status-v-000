@@ -19,14 +19,14 @@ def won?(board)
 
 end
 def full?(board)
-  
+
 end
 def draw?(draw_board)
 
 end
 def over?(board)
-  
+
 end
-def winner
-  
+def winner(board)
+
 end
