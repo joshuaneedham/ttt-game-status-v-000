@@ -35,7 +35,6 @@ def full?(board)
     board.all? do |move|
       move == "X" || move == "O"
     end
-    binding.pry
 end
 
 def draw?(draw_board)
