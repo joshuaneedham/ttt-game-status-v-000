@@ -1,3 +1,4 @@
+require 'pry'
 # Helper Method
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
@@ -16,18 +17,22 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  position_taken?.each do
-    |index|
+  WIN_COMBINATIONS.detect do |win_combination|
+    win_index_1 = win_combination[0]
+    win_index_2 = win_combination[1]
+    win_index_3 = win_combination[2]
+    binding.pry
   end
-  
 end
 
 def full?(board)
-
+  #Need to check if board is full
+  #Check for winning combination
 end
 
 def draw?(draw_board)
-
+  #Is board full?
+  #Is there a winning combination
 end
 
 def over?(board)
